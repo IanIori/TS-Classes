@@ -3,7 +3,7 @@ import { join } from "path"
 
 const dataBase = new DataSource({
     type: 'sqlite',
-    database: process.env.DATABASE || './src/database/database.sqlite',
+    database: './src/database/database.sqlite',
     logging: true,
     synchronize: true,
     entities: [
